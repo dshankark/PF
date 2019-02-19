@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+              <listener class-name ="pageFactory.extRep"/>
+ </listeners>
+  <test thread-count="5"  parallel="classes" name="Test">
+  <groups>
+           <define name ="one">
+           <include name ="oneWay"/>
+           </define>
+           <define name= "Two">
+           <include name ="two_way"/>
+           </define>
+           <define name ="all">
+           <include name ="oneWay"/>
+           <include name ="two_way"/>
+           </define>
+         <run>
+                <include name="one"/>
+                </run>
+    </groups>
+    <classes>
+      <class name="pageFactory.basePage"/>
+      <class name="pageFactory.roundTr"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
