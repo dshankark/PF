@@ -17,7 +17,7 @@ public class homePage {
 	WebElement toPlace;
 	@FindBy (xpath="//input[@id='DepartDate']")
 	WebElement depDate;
-	@FindBy (xpath="//div[@class='monthBlock first']/div/div/span[contains(text(),'February')]")
+	@FindBy (xpath="//div[@class='monthBlock first']/div/div/span[contains(text(),'March')]")
 	WebElement depMonth;
 	@FindBy (xpath="//div[contains(@class,'monthBlock first')]//a[contains(@class,'ui-state-default')][contains(text(),'27')]")
 	WebElement depschDate;
