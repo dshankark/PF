@@ -6,7 +6,7 @@
  </listeners>
   <test thread-count="5"  parallel="classes" name="Test">
   <groups>
-           <define name ="on">
+           <define name ="one">
            <include name ="oneWay"/>
            </define>
            <define name= "Two">
