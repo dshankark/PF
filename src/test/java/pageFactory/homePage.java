@@ -25,7 +25,7 @@ public class homePage {
 	WebElement retschMonth;
 	@FindBy (xpath="//a[contains(text(),'28')]")
 	WebElement retschDate;
-	@FindBy (xpath="//input[@id='SearchBt']")
+	@FindBy (xpath="//input[@id='SearchBtn']")
 	WebElement searchbt;
 
 	public homePage(WebDriver driver) {
